@@ -40,6 +40,7 @@ So I'm building the thing I actually wanted: a thinking and memory layer that ru
 - **Hands** — an agentic layer: run commands, edit files, finish multi-step work, with ask-before-acting control.
 - **Voice** — talk to it, wake phrases, voice memos it remembers, audio overviews of your own material.
 - **A daily diary it writes itself** — what it learned, what changed, what it got wrong. You can ratify or dispute it.
+- **It guards your token bill** — a built-in context economizer trims junk history from every prompt before it reaches your model (measured **46% token savings** on cluttered conversations). BYOK only works if the bill stays small; Orion makes sure it does.
 
 80+ live views inside — memory browser, knowledge graph, disagreement inbox, constitution, secrets vault, audit log, sandbox, a local `/v1` API, and more. It's not a thin app.
 
@@ -50,6 +51,8 @@ Closed source, local-first by architecture. No account, no telemetry decisions m
 ## Who's building this
 
 Just me. No company, no VC, no growth team — one builder who wanted an AI that actually knows him and got tired of waiting for someone else to make it.
+
+This wasn't thrown together. Months of research into memory architectures — consolidation, contradiction handling, retrieve-then-rerank recall — distilled into **288 cognition layers**, a live memory store past **5,000 entries**, and **80+ working views**. Built and tested every day by the one person who uses it hardest.
 
 I use Orion to build Orion. Its memory of past decisions — what we picked, what we rejected, and why — is literally how this project survives between sessions. Every feature on this page exists because I personally hit the wall it removes.
 
