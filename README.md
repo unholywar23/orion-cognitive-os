@@ -8,6 +8,8 @@
 
 `local-first` · `bring-your-own-keys` · `no cloud account` · `Windows`
 
+> 🚧 **Built in the open — actively under construction.** I work on Orion (and this page) nearly every day; screenshots, features, and pricing here can change week to week. Watch the repo to follow along.
+
 <img src="banner.png" width="760" alt="Orion — private cognitive OS for Windows">
 
 </div>
