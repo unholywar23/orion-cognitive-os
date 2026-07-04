@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ═══════════ SEO CORE ═══════════ TODO: swap canonical/og URLs when a real domain replaces GitHub Pages -->
+<!-- orion-landing v7 — 2026-07-03: STRUCTURAL overhaul. One demo (hero), problem = manifesto (no dup chat),
+     map+inside MERGED (marquee), page-wide living mesh (single canvas/RAF), contrast+gap+wrap fixes. -->
+<title>Orion — The AI That Remembers | Private Cognitive OS with Persistent Memory</title>
+<meta name="description" content="Orion is a private cognitive OS for Windows with persistent AI memory stored on your disk. Bring your own model keys (BYOK), opt-in screen vision, deep web research, glass-box reasoning. Free tier, Premium $20/mo, Charter lifetime $200.">
+<meta name="keywords" content="AI with memory, AI that remembers, local AI assistant, private AI assistant, persistent AI memory, BYOK AI, cognitive OS, local-first AI, Windows AI assistant, Rewind alternative, Limitless alternative, personal AI, AI memory app, offline AI assistant">
+<meta name="author" content="Orion">
+<link rel="canonical" href="https://unholywar23.github.io/orion-cognitive-os/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="theme-color" content="#020507">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M26.88 10.93A12 12 0 0 1 10.93 26.88' fill='none' stroke='%2300c8e0' stroke-opacity='.45' stroke-width='2.2' stroke-linecap='round'/%3E%3Cpath d='M5.12 21.07A12 12 0 0 1 21.07 5.12' fill='none' stroke='%2300c8e0' stroke-opacity='.45' stroke-width='2.2' stroke-linecap='round'/%3E%3Cline x1='9.28' y1='22.72' x2='22.72' y2='9.28' stroke='%2300c8e0' stroke-width='1.7'/%3E%3Ccircle cx='9.28' cy='22.72' r='2.3' fill='%2300c8e0'/%3E%3Ccircle cx='22.72' cy='9.28' r='2.3' fill='%2300c8e0'/%3E%3Ccircle cx='16' cy='16' r='3.1' fill='%234feaff'/%3E%3Ccircle cx='16' cy='16' r='1.2' fill='%23eafcff'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Orion">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Orion — The AI That Remembers">
+<meta property="og:description" content="A private cognitive OS that lives on your computer. Memory as files on your disk — not rows in someone else's cloud. Free tier available; Charter lifetime limited to 100.">
+<meta property="og:url" content="https://unholywar23.github.io/orion-cognitive-os/">
+<meta property="og:image" content="https://unholywar23.github.io/orion-cognitive-os/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Orion — the AI that remembers. Private cognitive OS.">
+<meta property="og:updated_time" content="2026-07-03">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Orion — The AI That Remembers">
+<meta name="twitter:description" content="Private cognitive OS. Persistent memory on your disk. Any model, your keys. Free tier · Premium $20/mo · Charter $200 lifetime (100 slots).">
+<meta name="twitter:image" content="https://unholywar23.github.io/orion-cognitive-os/og.png">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Orion","url":"https://unholywar23.github.io/orion-cognitive-os/","logo":"https://unholywar23.github.io/orion-cognitive-os/apple-touch-icon.png","sameAs":[]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Orion","url":"https://unholywar23.github.io/orion-cognitive-os/"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Orion","applicationCategory":"UtilitiesApplication",
+"operatingSystem":"Windows","dateModified":"2026-07-03","description":"Private, local-first cognitive OS with persistent AI memory stored on the user's disk, bring-your-own-key model access, opt-in screen vision, and glass-box reasoning.",
+"brand":{"@type":"Brand","name":"Orion"},
+"offers":{"@type":"AggregateOffer","lowPrice":"0","highPrice":"200","priceCurrency":"USD","offerCount":4,
+"offers":[
+ {"@type":"Offer","name":"Free","price":"0","priceCurrency":"USD","description":"Persistent memory, any model via your keys, screen vision, deep search."},
+ {"@type":"Offer","name":"Premium Monthly","price":"20","priceCurrency":"USD"},
+ {"@type":"Offer","name":"Premium Annual","price":"192","priceCurrency":"USD"},
+ {"@type":"Offer","name":"Charter Member Lifetime","price":"200","priceCurrency":"USD","description":"Lifetime license, limited to 100 buyers."}]}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"What is Orion?","acceptedAnswer":{"@type":"Answer","text":"Orion is a private cognitive OS for Windows: a thinking and memory layer that runs on your computer above any AI model you choose. Its memory is stored as files on your disk, not in a vendor cloud."}},
+ {"@type":"Question","name":"Does Orion work offline?","acceptedAnswer":{"@type":"Answer","text":"Yes. Point Orion at local models and everything runs on your machine. With cloud keys, only the model calls leave your computer — memory and files never do."}},
+ {"@type":"Question","name":"Do I need my own AI provider account?","acceptedAnswer":{"@type":"Answer","text":"For cloud-grade answers, yes — paste in a key from your provider; you pay them directly at cost. Or run local models with zero cloud. Orion never restricts which model you use, in any tier."}},
+ {"@type":"Question","name":"Is Orion a Rewind or Limitless alternative?","acceptedAnswer":{"@type":"Answer","text":"Orion is not a screen recorder — it is a persistent-memory AI assistant. But if what drew you to Rewind or Limitless was the local-first promise, Orion actually keeps it: memory lives as files on your own disk, there is no vendor backend to be acquired or sunset, and your data cannot be taken away."}},
+ {"@type":"Question","name":"How much does Orion cost?","acceptedAnswer":{"@type":"Answer","text":"Free tier at $0 with no card. Premium at $20/month or $192/year. Charter Member is a $200 one-time lifetime license limited to 100 buyers with a lifetime rate lock."}},
+ {"@type":"Question","name":"Is there a refund policy?","acceptedAnswer":{"@type":"Answer","text":"30-day money-back on every paid tier, no questions asked. Charter Members keep 30-day refund eligibility for life."}},
+ {"@type":"Question","name":"What does screen vision see?","acceptedAnswer":{"@type":"Answer","text":"Nothing until you switch it on. Eyes are off by default, watch mode shows a visible indicator, and one click turns it all off."}}]}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --void:#02060a; --void2:#040a12; --panel:#0b1119; --panel2:#0e1620; --edge:rgba(140,190,215,.11); --edge2:rgba(140,190,215,.2);
+    --cyan:#00c8e0; --cyan-hot:#4feaff; --cyan-dim:rgba(0,200,224,.10); --cyan-line:rgba(0,200,224,.3);
+    --violet:#6a5cff; --gold:#e6c168; --red:#ff5d6a;
+    --text:#f0f6fa; --text2:#b8c9d6; --text3:#7b93a6;
+    --fd:'Space Grotesk',sans-serif; --fb:'Inter',sans-serif; --fm:'JetBrains Mono',monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--void);color:var(--text);font-family:var(--fb);font-size:15px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:rgba(0,200,224,.3)}
+  /* ONE page-wide living canvas: stars + synaptic mesh, cursor-reactive everywhere */
+  #mesh{position:fixed;inset:0;z-index:0;pointer-events:none}
+  .grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.4;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
+  nav,main,footer{position:relative;z-index:2}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+  .sect{position:relative;padding:76px 0;scroll-margin-top:70px}
+  .eyebrow{display:flex;align-items:center;gap:10px;font-family:var(--fm);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--cyan);margin-bottom:14px}
+  .eyebrow .idx{color:var(--text3)}
+  .eyebrow::after{content:'';flex:0 0 40px;height:1px;background:linear-gradient(90deg,var(--cyan),transparent)}
+  h2{font-family:var(--fd);font-weight:700;font-size:clamp(30px,4.4vw,50px);line-height:1.08;letter-spacing:-.024em;margin-bottom:14px}
+  h2 .g{background:linear-gradient(95deg,var(--cyan-hot),var(--cyan) 45%,#9fe8f5 70%,var(--cyan-hot));background-size:220% 100%;
+    -webkit-background-clip:text;background-clip:text;color:transparent;animation:gslide 7s ease-in-out infinite}
+  @keyframes gslide{0%,100%{background-position:0% 0}50%{background-position:100% 0}}
+  .sub{color:var(--text2);font-size:16px;max-width:660px}
+  .rv{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.2,.6,.2,1),transform .7s cubic-bezier(.2,.6,.2,1)}
+  .rv.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){
+    .rv{opacity:1;transform:none;transition:none}
+    h2 .g{animation:none}
+  }
+  .ic{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+  .hud{position:relative}
+  .hud::before,.hud::after{content:'';position:absolute;width:16px;height:16px;border:1px solid var(--cyan-line);pointer-events:none}
+  .hud::before{top:-1px;left:-1px;border-right:none;border-bottom:none;border-radius:3px 0 0 0}
+  .hud::after{bottom:-1px;right:-1px;border-left:none;border-top:none;border-radius:0 0 3px 0}
+  /* section rhythm divider */
+  .divider{max-width:1180px;margin:0 auto;padding:0 26px;display:flex;align-items:center;gap:14px;opacity:.7}
+  .divider::before,.divider::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--edge2),transparent)}
+  .divider span{font-family:var(--fm);font-size:10px;color:var(--cyan);letter-spacing:.3em}
+
+  /* ghost section numerals */
+  .ghost{position:absolute;top:10px;right:0;z-index:-1;font-family:var(--fd);font-weight:700;font-size:clamp(120px,20vw,250px);line-height:1;
+    color:transparent;-webkit-text-stroke:1px rgba(0,200,224,.09);pointer-events:none;user-select:none}
+  @supports (animation-timeline: view()){
+    .ghost{animation:ghostDrift linear both;animation-timeline:view();animation-range:entry 0% exit 100%}
+    @keyframes ghostDrift{from{transform:translateY(80px);opacity:.4}to{transform:translateY(-80px);opacity:1}}
+  }
+  @media(max-width:760px){.ghost{font-size:100px;opacity:.5}}
+
+  /* scroll progress beam */
+  .progress{position:fixed;top:0;left:0;right:0;height:2px;z-index:70;transform-origin:0 50%;transform:scaleX(0);
+    background:linear-gradient(90deg,var(--cyan),var(--cyan-hot));box-shadow:0 0 12px rgba(0,200,224,.8);pointer-events:none}
+  @supports (animation-timeline: scroll()){
+    .progress{animation:prog linear both;animation-timeline:scroll()}
+    @keyframes prog{to{transform:scaleX(1)}}
+  }
+
+  /* NAV */
+  nav{position:fixed;inset:0 0 auto;z-index:60;transition:background .25s,border-color .25s;border-bottom:1px solid transparent}
+  nav.scr{background:rgba(2,6,10,.85);backdrop-filter:blur(18px);border-color:var(--edge)}
+  .nav-in{max-width:1180px;margin:0 auto;padding:0 26px;height:62px;display:flex;align-items:center;justify-content:space-between}
+  .logo{display:flex;align-items:center;gap:9px;font-family:var(--fd);font-weight:700;font-size:16px;letter-spacing:.14em}
+  .nlinks{display:flex;gap:2px;align-items:center;font-size:13px;color:var(--text2)}
+  .nlinks a{padding:7px 13px;border-radius:8px;transition:color .15s,background .15s}
+  .nlinks a:hover{color:var(--text);background:rgba(255,255,255,.05)}
+  .ncta{margin-left:12px;padding:8px 18px;border-radius:9px;background:linear-gradient(180deg,var(--cyan-hot),var(--cyan));color:#02272d;font-weight:700;font-size:13px;
+    box-shadow:0 0 0 1px rgba(255,255,255,.2) inset,0 0 22px rgba(0,200,224,.4)}
+  .ncta:hover{box-shadow:0 0 0 1px rgba(255,255,255,.25) inset,0 0 36px rgba(0,200,224,.65)}
+  @media(max-width:840px){.nlinks a:not(.ncta){display:none}}
+
+  /* HERO */
+  .hero{position:relative;padding:150px 0 0}
+  .hero .heroglow{position:absolute;left:-12%;top:-10%;width:64%;height:110%;z-index:0;pointer-events:none;
+    background:radial-gradient(ellipse at 30% 40%,rgba(0,200,224,.13),transparent 62%)}
+  .hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.02fr .98fr;gap:48px;align-items:center;padding-bottom:64px}
+  @media(max-width:980px){.hero .wrap{grid-template-columns:1fr}.hero{padding-top:116px}}
+  .wordmark{display:flex;align-items:center;gap:12px;font-family:var(--fm);font-size:11px;letter-spacing:.5em;text-transform:uppercase;color:var(--text3);margin-bottom:18px}
+  .wordmark i{font-style:normal;color:var(--cyan);letter-spacing:.5em}
+  .wordmark::before,.wordmark::after{content:'';height:1px;width:34px;background:var(--edge2)}
+  h1{font-family:var(--fd);font-weight:700;font-size:clamp(40px,5.6vw,76px);line-height:1.0;letter-spacing:-.034em;margin-bottom:22px;
+    text-shadow:0 0 60px rgba(0,200,224,.14)}
+  h1 .g{position:relative;white-space:nowrap;background:linear-gradient(95deg,var(--cyan-hot) 5%,var(--cyan) 40%,#8be2f0 70%,var(--cyan-hot) 95%);background-size:200% 100%;
+    -webkit-background-clip:text;background-clip:text;color:transparent;animation:gslide 6s ease-in-out infinite}
+  h1 .g::after{content:'';position:absolute;left:2%;bottom:-7px;width:96%;height:2px;border-radius:2px;
+    background:linear-gradient(90deg,transparent,var(--cyan),transparent);animation:sweep 3.6s ease-in-out infinite}
+  @keyframes sweep{0%,100%{opacity:.25}50%{opacity:.95}}
+  @media(prefers-reduced-motion:reduce){h1 .g{animation:none}h1 .g::after{animation:none}}
+  .lede{font-size:17px;color:var(--text2);max-width:540px;margin-bottom:28px}
+  .lede strong{color:var(--text);font-weight:600}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 28px;border-radius:12px;font-family:var(--fb);
+    font-size:14.5px;font-weight:700;cursor:pointer;border:none;transition:transform .15s,box-shadow .15s}
+  .btn:active{transform:scale(.98)}
+  .btn-p{background:linear-gradient(180deg,var(--cyan-hot),var(--cyan));color:#02272d;
+    box-shadow:0 1px 0 rgba(255,255,255,.45) inset,0 0 28px rgba(0,200,224,.45)}
+  .btn-p:hover{box-shadow:0 1px 0 rgba(255,255,255,.45) inset,0 0 50px rgba(0,200,224,.75);transform:translateY(-1px)}
+  .ctas .btn-p{animation:beckon 2.6s ease-in-out infinite}
+  @keyframes beckon{0%,100%{box-shadow:0 1px 0 rgba(255,255,255,.45) inset,0 0 24px rgba(0,200,224,.4)}50%{box-shadow:0 1px 0 rgba(255,255,255,.45) inset,0 0 52px rgba(0,200,224,.8)}}
+  @media(prefers-reduced-motion:reduce){.ctas .btn-p{animation:none}}
+  .btn-g{background:rgba(255,255,255,.035);color:var(--text);border:1px solid var(--edge2)}
+  .btn-g:hover{border-color:var(--cyan-line);background:var(--cyan-dim)}
+  .ctas{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+  .price-hint{font-size:12px;color:var(--text3);margin-top:14px;font-family:var(--fm);letter-spacing:.04em}
+  .price-hint b{color:var(--cyan)}
+  .capture{display:none;margin-top:16px;max-width:430px}
+  .capture.open{display:flex;gap:8px}
+  .capture input{flex:1;padding:12px 15px;border-radius:11px;border:1px solid var(--edge2);background:var(--panel);color:var(--text);font-size:13.5px;outline:none}
+  .capture input:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(0,200,224,.14)}
+  .cap-msg{margin-top:8px;font-size:12.5px;color:var(--cyan-hot);min-height:18px}
+
+  /* demo terminal — THE one memory demo on the page */
+  .termwrap{perspective:1100px}
+  .term{position:relative;border-radius:18px;background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--edge2);
+    box-shadow:0 46px 110px rgba(0,0,0,.75),0 0 90px rgba(0,200,224,.09);overflow:hidden;transition:transform .2s ease;will-change:transform}
+  .term::before{content:'';position:absolute;inset:-1px;border-radius:18px;padding:1px;pointer-events:none;
+    background:linear-gradient(135deg,rgba(0,200,224,.55),transparent 30%,transparent 70%,rgba(106,92,255,.35));
+    -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+  .tbar{display:flex;align-items:center;gap:7px;padding:12px 16px;border-bottom:1px solid var(--edge);font-family:var(--fm);font-size:11px;color:var(--text3)}
+  .tbar .d{width:9px;height:9px;border-radius:50%}
+  .tbody{padding:18px;font-size:13px;height:344px;overflow-y:auto;scrollbar-width:none}
+  .tbody::-webkit-scrollbar{display:none}
+  .msg{margin-bottom:11px;max-width:94%;opacity:0;transform:translateY(6px);transition:opacity .4s,transform .4s}
+  .msg.show{opacity:1;transform:none}
+  .msg .who{font-family:var(--fm);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--text3);margin-bottom:3px}
+  .msg.orion .who{color:var(--cyan)}
+  .msg p{padding:9px 13px;border-radius:11px;background:rgba(255,255,255,.03);color:var(--text2);line-height:1.5;font-size:12.8px}
+  .msg.orion p{background:rgba(0,200,224,.06);border:1px solid rgba(0,200,224,.15);color:var(--text)}
+  .mem{display:inline-flex;align-items:center;gap:6px;margin-top:6px;font-family:var(--fm);font-size:9.8px;color:var(--cyan);
+    background:rgba(0,200,224,.06);border:1px dashed rgba(0,200,224,.32);border-radius:7px;padding:3px 8px;animation:memPulse 2.4s ease-in-out infinite}
+  @keyframes memPulse{0%,100%{box-shadow:0 0 0 rgba(0,200,224,0)}50%{box-shadow:0 0 14px rgba(0,200,224,.35)}}
+  @media(prefers-reduced-motion:reduce){.mem{animation:none}}
+  .tgap{text-align:center;font-family:var(--fm);font-size:10px;color:var(--text3);letter-spacing:.16em;margin:12px 0;opacity:0;transition:opacity .5s}
+  .tgap.show{opacity:1}
+
+  /* TICKER + STATS fused band */
+  .band{border-top:1px solid var(--edge);border-bottom:1px solid var(--edge);background:rgba(4,8,16,.6);backdrop-filter:blur(6px);position:relative;z-index:2}
+  .ticker{overflow:hidden;padding:12px 0;border-bottom:1px solid var(--edge)}
+  .tk{display:flex;gap:38px;width:max-content;animation:tk 44s linear infinite;font-family:var(--fm);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--text3);white-space:nowrap}
+  .tk span::before{content:'◇  ';color:var(--cyan);opacity:.75}
+  @keyframes tk{to{transform:translateX(-50%)}}
+  @media(prefers-reduced-motion:reduce){.tk{animation:none}}
+  .stats{max-width:1180px;margin:0 auto;padding:24px 26px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  @media(max-width:820px){.stats{grid-template-columns:repeat(2,1fr)}}
+  .stat{display:flex;flex-direction:column;gap:1px;border-left:2px solid var(--cyan-line);padding-left:16px}
+  .stat b{font-family:var(--fd);font-size:34px;letter-spacing:-.01em;text-shadow:0 0 26px rgba(0,200,224,.25)}
+  .stat b em{font-style:normal;color:var(--cyan)}
+  .stat span{font-size:12px;color:var(--text3)}
+
+  /* PROBLEM — typographic manifesto (the duel is GONE; the hero terminal is the one demo) */
+  .sect-problem{text-align:center}
+  .sect-problem::before{content:'';position:absolute;left:50%;top:0;transform:translateX(-50%);width:80%;height:100%;pointer-events:none;
+    background:radial-gradient(ellipse at 50% 20%,rgba(255,93,106,.07),transparent 60%)}
+  .glitch{color:var(--red);position:relative;display:inline-block;animation:glitchSkew 5s steps(1) infinite}
+  .glitch::before,.glitch::after{content:attr(data-t);position:absolute;left:0;top:0;width:100%;overflow:hidden;pointer-events:none}
+  .glitch::before{color:rgba(79,234,255,.75);clip-path:inset(18% 0 62% 0);animation:glitchA 3.2s steps(2) infinite;opacity:0}
+  .glitch::after{color:rgba(255,93,106,.75);clip-path:inset(64% 0 8% 0);animation:glitchB 2.7s steps(2) infinite;opacity:0}
+  @keyframes glitchA{0%,93%,100%{opacity:0;transform:none}94%,96%{opacity:1;transform:translateX(-4px)}}
+  @keyframes glitchB{0%,89%,100%{opacity:0;transform:none}90%,92%{opacity:1;transform:translateX(4px)}}
+  @keyframes glitchSkew{0%,94%,100%{transform:none}95%{transform:skewX(-1.2deg)}97%{transform:skewX(.8deg)}}
+  @media(prefers-reduced-motion:reduce){.glitch,.glitch::before,.glitch::after{animation:none}}
+  .bigcount{font-family:var(--fd);font-weight:700;font-size:clamp(90px,16vw,200px);line-height:1;letter-spacing:-.04em;
+    color:var(--red);text-shadow:0 0 80px rgba(255,93,106,.3);margin:26px 0 4px}
+  .bigcount small{font-size:.35em;color:var(--text3);letter-spacing:0}
+  .bigcount-cap{font-family:var(--fm);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--text3);margin-bottom:36px}
+  .receipts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:960px;margin:0 auto}
+  @media(max-width:880px){.receipts{grid-template-columns:1fr}}
+  .receipt{padding:20px 22px;border-radius:14px;background:linear-gradient(180deg,rgba(255,93,106,.05),var(--panel) 60%);
+    border:1px solid rgba(255,93,106,.2);text-align:left}
+  .receipt b{display:block;font-family:var(--fm);font-size:10.5px;letter-spacing:.18em;color:var(--red);margin-bottom:8px}
+  .receipt span{font-size:13.5px;color:var(--text2);line-height:1.55}
+  .receipt.turn{background:linear-gradient(180deg,rgba(0,200,224,.06),var(--panel) 60%);border-color:var(--cyan-line)}
+  .receipt.turn b{color:var(--cyan)}
+  .quote{border-left:2px solid var(--cyan);padding:8px 0 8px 22px;margin:44px auto 0;max-width:760px;text-align:left}
+  .quote p{font-family:var(--fd);font-size:19px;line-height:1.5;font-weight:500}
+  .quote .src{margin-top:10px;font-size:12.5px;color:var(--text3)}
+
+  /* BENTO */
+  .bento{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:36px}
+  .b{position:relative;padding:24px;border-radius:16px;background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--edge);overflow:hidden;transition:border-color .2s,transform .2s,box-shadow .2s}
+  .b::after{content:'';position:absolute;inset:0;opacity:0;transition:opacity .3s;pointer-events:none;
+    background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%),rgba(0,200,224,.11),transparent 60%)}
+  .b:hover{border-color:var(--cyan-line);transform:translateY(-3px);box-shadow:0 14px 44px rgba(0,0,0,.45),0 0 30px rgba(0,200,224,.07)}
+  .b:hover::after{opacity:1}
+  .b .bi{width:38px;height:38px;border-radius:11px;background:var(--cyan-dim);border:1px solid var(--cyan-line);display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--cyan)}
+  .b h3{font-family:var(--fd);font-size:17px;margin-bottom:6px}
+  .b p{font-size:13.5px;color:var(--text2)}
+  .b .chip{position:absolute;top:18px;right:18px;font-family:var(--fm);font-size:9.5px;letter-spacing:.12em;color:var(--cyan);border:1px solid var(--cyan-line);border-radius:6px;padding:3px 8px;background:rgba(0,200,224,.05)}
+  .b3{grid-column:span 3}.b2{grid-column:span 2}
+  @media(max-width:900px){.b3,.b2{grid-column:span 6}}
+  .b.lead{background:linear-gradient(135deg,rgba(0,200,224,.08),var(--panel) 55%);border-color:var(--cyan-line)}
+  .b.lead::before{content:'';position:absolute;inset:-60% -20%;pointer-events:none;opacity:.5;
+    background:conic-gradient(from 0deg,transparent 82%,rgba(79,234,255,.16) 92%,transparent 100%);animation:leadSweep 7s linear infinite}
+  @keyframes leadSweep{to{transform:rotate(360deg)}}
+  @media(prefers-reduced-motion:reduce){.b.lead::before{animation:none;opacity:0}}
+  .memline{position:relative;margin-top:14px;font-family:var(--fm);font-size:10.5px;color:var(--cyan);background:rgba(0,200,224,.05);border:1px solid rgba(0,200,224,.16);border-radius:8px;padding:8px 11px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+  .eyeball{position:relative;width:38px;height:38px;border-radius:11px;background:var(--cyan-dim);border:1px solid var(--cyan-line);margin-bottom:14px;display:flex;align-items:center;justify-content:center}
+  .eyeball .white{width:22px;height:14px;border-radius:50%;border:1.6px solid var(--cyan);position:relative;overflow:hidden}
+  .eyeball .pupil{position:absolute;width:7px;height:7px;border-radius:50%;background:var(--cyan-hot);left:50%;top:50%;transform:translate(-50%,-50%);box-shadow:0 0 8px var(--cyan-hot)}
+
+  /* INSIDE (merged: subsystems grid + 80+ views marquee) */
+  .inside-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:36px;background:var(--edge);border:1px solid var(--edge);border-radius:16px;overflow:hidden}
+  @media(max-width:980px){.inside-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.inside-grid{grid-template-columns:1fr}}
+  .ii{background:rgba(11,17,25,.93);padding:17px 19px;transition:background .2s}
+  .ii:hover{background:var(--panel2)}
+  .ii b{display:block;font-family:var(--fd);font-size:13.5px;margin-bottom:3px}
+  .ii b::before{content:'◇ ';color:var(--cyan);font-size:11px}
+  .ii span{font-size:12px;color:var(--text3);line-height:1.5;display:block}
+  .views-head{display:flex;align-items:baseline;gap:14px;margin:44px 0 16px}
+  .views-head b{font-family:var(--fd);font-size:22px}
+  .views-head b em{font-style:normal;color:var(--cyan)}
+  .views-head span{font-size:12.5px;color:var(--text3)}
+  .vrow{overflow:hidden;margin-bottom:10px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+  .vtrack{display:flex;gap:10px;width:max-content;animation:vslide 70s linear infinite}
+  .vrow.rev .vtrack{animation-direction:reverse;animation-duration:84s}
+  @keyframes vslide{to{transform:translateX(-50%)}}
+  @media(prefers-reduced-motion:reduce){.vtrack{animation:none}}
+  .vchip{flex:0 0 auto;font-family:var(--fm);font-size:11.5px;color:var(--text2);padding:8px 14px;border-radius:999px;
+    background:rgba(11,17,25,.9);border:1px solid var(--edge);white-space:nowrap;transition:border-color .2s,color .2s}
+  .vchip:hover{border-color:var(--cyan-line);color:var(--cyan-hot)}
+  .vchip::before{content:'◇ ';color:var(--cyan);opacity:.7}
+
+  /* ARCHITECTURE — violet depth */
+  .sect-arch::before{content:'';position:absolute;right:-14%;top:6%;width:58%;height:96%;pointer-events:none;
+    background:radial-gradient(ellipse at 70% 45%,rgba(106,92,255,.11),transparent 62%)}
+  .archwrap{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;margin-top:8px}
+  @media(max-width:920px){.archwrap{grid-template-columns:1fr}}
+  #ring{width:100%;max-width:440px;aspect-ratio:1;margin:0 auto;display:block;filter:drop-shadow(0 0 34px rgba(0,200,224,.14))}
+  .pipe{margin-top:30px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .stage{font-family:var(--fm);font-size:11.5px;padding:9px 15px;border-radius:10px;background:var(--panel2);border:1px solid var(--edge);color:var(--text2);transition:all .3s}
+  .stage.lit{color:var(--cyan-hot);border-color:var(--cyan);box-shadow:0 0 18px rgba(0,200,224,.28);background:rgba(0,200,224,.08)}
+  .arr{color:var(--text3);font-size:12px}
+  .hood-cols{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:30px}
+  .hc{padding:19px;border-radius:14px;background:var(--panel);border:1px solid var(--edge);transition:border-color .2s}
+  .hc:hover{border-color:var(--cyan-line)}
+  .hc b{display:flex;align-items:center;gap:9px;font-size:13.5px}
+  .hc b .ic{color:var(--cyan);width:15px;height:15px}
+  .hc p{font-size:12.5px;color:var(--text2);margin-top:6px}
+
+  /* COMPARE table — scannable glyphs */
+  .twrap{margin-top:34px;border-radius:16px;border:1px solid var(--edge);overflow:hidden;background:rgba(11,17,25,.92)}
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th,td{padding:13px 18px;text-align:left;border-bottom:1px solid var(--edge)}
+  tr:last-child td{border-bottom:none}
+  th{font-family:var(--fm);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--text3);background:rgba(255,255,255,.018)}
+  th:last-child{color:var(--cyan)}
+  td:first-child{color:var(--text2)}
+  td:last-child{background:rgba(0,200,224,.04);color:var(--text)}
+  .no{color:var(--text3)}
+  .no::before{content:'✕  ';color:rgba(255,93,106,.7);font-size:11px}
+  .yes::before{content:'✓  ';color:var(--cyan);font-size:12px}
+
+  /* PRICING — gold-warmed */
+  .sect-pricing::before{content:'';position:absolute;right:-8%;top:20%;width:48%;height:75%;pointer-events:none;
+    background:radial-gradient(ellipse at 75% 50%,rgba(230,193,104,.06),transparent 62%)}
+  .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px;align-items:stretch}
+  @media(max-width:900px){.plans{grid-template-columns:1fr}}
+  .plan{position:relative;display:flex;flex-direction:column;padding:27px 25px;border-radius:18px;background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--edge);transition:transform .2s,box-shadow .2s,border-color .2s}
+  .plan:hover{transform:translateY(-4px);border-color:var(--edge2);box-shadow:0 22px 60px rgba(0,0,0,.5)}
+  .plan h3{font-family:var(--fd);font-size:14px;letter-spacing:.07em;color:var(--text2);text-transform:uppercase;font-weight:600}
+  .plan .pr{font-family:var(--fd);font-size:44px;font-weight:700;letter-spacing:-.02em;margin:10px 0 0}
+  .plan .pr small{font-size:14px;color:var(--text3);font-weight:500}
+  .plan .cy{font-size:11.5px;color:var(--text3);margin-bottom:16px;min-height:17px;font-family:var(--fm)}
+  .plan ul{list-style:none;margin:0 0 20px;flex:1}
+  .plan li{display:flex;gap:9px;padding:5px 0;font-size:13px;color:var(--text2);align-items:flex-start}
+  .plan li .ic{width:14px;height:14px;color:var(--cyan);margin-top:2.5px}
+  .plan li.soon{color:var(--text3)}
+  .plan li.soon .ic{color:var(--text3)}
+  .plan li.soon i{font-style:normal;font-family:var(--fm);font-size:9px;letter-spacing:.08em;color:var(--gold);border:1px solid rgba(230,193,104,.35);border-radius:5px;padding:1px 5px;margin-left:6px;white-space:nowrap}
+  .plan .btn{width:100%;padding:13px}
+  .plan.hot{border-color:rgba(0,200,224,.55);background:linear-gradient(180deg,rgba(0,200,224,.08),var(--panel) 42%);
+    box-shadow:0 28px 80px rgba(0,0,0,.55),0 0 50px rgba(0,200,224,.11);transform:scale(1.03)}
+  .plan.hot:hover{transform:scale(1.03) translateY(-4px)}
+  .plan.gold{border-color:rgba(230,193,104,.4);background:linear-gradient(180deg,rgba(230,193,104,.05),var(--panel) 42%);overflow:hidden}
+  .plan.gold::before{content:'';position:absolute;top:0;left:-80%;width:60%;height:100%;pointer-events:none;transform:skewX(-18deg);
+    background:linear-gradient(90deg,transparent,rgba(243,214,139,.07),transparent);animation:goldSweep 5.5s ease-in-out infinite}
+  @keyframes goldSweep{0%,55%,100%{left:-80%}25%{left:130%}}
+  @media(prefers-reduced-motion:reduce){.plan.gold::before{animation:none}}
+  .plan.gold li .ic{color:var(--gold)}
+  .anchor-math{margin:0 0 14px;font-family:var(--fm);font-size:10.8px;color:var(--gold);background:rgba(230,193,104,.06);
+    border:1px dashed rgba(230,193,104,.3);border-radius:8px;padding:7px 10px;line-height:1.55}
+  .anchor-math s{color:var(--text3)}
+  .badge{position:absolute;top:-11px;left:25px;font-family:var(--fm);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;
+    padding:5px 12px;border-radius:999px;background:linear-gradient(180deg,var(--cyan-hot),var(--cyan));color:#02272d;font-weight:700}
+  .badge.gb{background:linear-gradient(180deg,#f3d68b,var(--gold));color:#2a2005}
+  .btn-gold{background:linear-gradient(180deg,#f3d68b,var(--gold));color:#2a2005}
+  .btn-gold:hover{box-shadow:0 0 34px rgba(230,193,104,.5)}
+  .slotbar{margin:2px 0 12px}
+  .slotbar .sb-t{display:flex;justify-content:space-between;font-family:var(--fm);font-size:10px;color:var(--text3);margin-bottom:5px}
+  .slotbar .sb-t b{color:var(--gold)}
+  .slotbar .sb{height:5px;border-radius:4px;background:rgba(255,255,255,.06);overflow:hidden}
+  .slotbar .sb i{display:block;height:100%;width:100%;border-radius:4px;background:linear-gradient(90deg,var(--gold),#f3d68b)}
+  .trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:22px;font-size:12.5px;color:var(--text3)}
+  .trust span{display:inline-flex;align-items:center;gap:7px}
+  .trust .ic{width:14px;height:14px;color:var(--cyan)}
+  .plans-foot{margin-top:16px;font-size:12.5px;color:var(--text3);max-width:840px;line-height:1.7}
+  .plans-foot b{color:var(--text2)}
+  .plans-foot .soonkey{font-family:var(--fm);font-size:9px;letter-spacing:.08em;color:var(--gold);border:1px solid rgba(230,193,104,.35);border-radius:5px;padding:1px 5px}
+
+  /* FAQ */
+  .faqs{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start}
+  @media(max-width:820px){.faqs{grid-template-columns:1fr}}
+  details{border:1px solid var(--edge);border-radius:13px;padding:16px 20px;background:rgba(11,17,25,.92);transition:border-color .2s}
+  details[open]{border-color:var(--cyan-line)}
+  summary{cursor:pointer;font-family:var(--fd);font-size:14px;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:'+';color:var(--cyan);font-size:18px;flex-shrink:0}
+  details[open] summary::after{content:'–'}
+  details p{margin-top:10px;color:var(--text2);font-size:13px}
+
+  /* FINAL */
+  .final{position:relative;text-align:center;padding:120px 26px 100px;overflow:hidden}
+  .final .glow{position:absolute;left:50%;top:0;transform:translateX(-50%);width:920px;height:920px;border-radius:50%;
+    background:radial-gradient(circle,rgba(0,200,224,.17),transparent 60%);pointer-events:none;animation:finalBreathe 5s ease-in-out infinite}
+  @keyframes finalBreathe{0%,100%{opacity:.8}50%{opacity:1.0}}
+  @media(prefers-reduced-motion:reduce){.final .glow{animation:none}}
+  .final h2{font-size:clamp(32px,5.6vw,64px);letter-spacing:-.03em}
+  footer{border-top:1px solid var(--edge);background:rgba(2,6,10,.7)}
+  .f-in{max-width:1180px;margin:0 auto;padding:34px 26px;display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap;font-size:12.5px;color:var(--text3);align-items:center}
+  .f-links{display:flex;gap:20px}
+  .f-links a:hover{color:var(--text)}
+  .f-seo{max-width:1180px;margin:0 auto;padding:0 26px 30px;font-size:11.5px;color:#46596a;line-height:1.7}
+</style>
+</head>
+<body>
+<canvas id="mesh" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <g id="i-brain"><path d="M9 3a3 3 0 0 0-3 3v.5A3 3 0 0 0 4 12a3 3 0 0 0 2 5.2V18a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z"/><path d="M15 3a3 3 0 0 1 3 3v.5A3 3 0 0 1 20 12a3 3 0 0 1-2 5.2V18a3 3 0 0 1-6 0"/></g>
+  <g id="i-key"><circle cx="8" cy="15" r="4"/><path d="M11 12 20 3m-4 1 3 3m-6 0 2 2"/></g>
+  <g id="i-book"><path d="M4 4h7v16H6a2 2 0 0 1-2-2V4Zm16 0h-7v16h5a2 2 0 0 0 2-2V4Z"/></g>
+  <g id="i-layers"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5"/></g>
+  <g id="i-scan"><circle cx="11" cy="11" r="6"/><path d="m20 20-4.5-4.5"/></g>
+  <g id="i-check"><path d="m4 12.5 5 5L20 6.5"/></g>
+  <g id="i-shield"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4.5"/></g>
+  <g id="i-lock"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></g>
+  <g id="i-disk"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></g>
+  <g id="i-globe"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.6 3.8 9S14.5 18.5 12 21c-2.5-2.5-3.8-5.6-3.8-9S9.5 5.5 12 3Z"/></g>
+  <g id="i-zap"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></g>
+  <g id="i-split"><path d="M12 3v7m0 0-4 4m4-4 4 4M6 21h12"/></g>
+  <g id="i-card"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/></g>
+</defs></svg>
+
+<nav id="nav">
+  <div class="nav-in">
+    <a class="logo" href="#top" aria-label="Orion home">
+      <svg viewBox="0 0 32 32" width="22" height="22"><path d="M26.88 10.93A12 12 0 0 1 10.93 26.88" fill="none" stroke="#00c8e0" stroke-opacity=".45" stroke-width="2.2" stroke-linecap="round"/><path d="M5.12 21.07A12 12 0 0 1 21.07 5.12" fill="none" stroke="#00c8e0" stroke-opacity=".45" stroke-width="2.2" stroke-linecap="round"/><line x1="9.28" y1="22.72" x2="22.72" y2="9.28" stroke="#00c8e0" stroke-width="1.7"/><circle cx="9.28" cy="22.72" r="2.3" fill="#00c8e0"/><circle cx="22.72" cy="9.28" r="2.3" fill="#00c8e0"/><circle cx="16" cy="16" r="3.1" fill="#4feaff"/><circle cx="16" cy="16" r="1.2" fill="#eafcff"/></svg>
+      ORION
+    </a>
+    <div class="nlinks">
+      <a href="#features">Features</a>
+      <a href="#inside">Inside</a>
+      <a href="#hood">Architecture</a>
+      <a href="#compare">Compare</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a class="ncta" href="#pricing">Buy Orion</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<!-- ═══ HERO — the ONE live memory demo lives here ═══ -->
+<header class="hero" id="top">
+  <div class="heroglow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <div class="wordmark">PRIVATE&nbsp;COGNITIVE&nbsp;OS&nbsp;<i>//</i>&nbsp;WINDOWS</div>
+      <h1>The AI that<br><span class="g" id="rotator">remembers.</span></h1>
+      <p class="lede">Orion is a <strong>private cognitive OS</strong> for your computer. Every
+      conversation becomes structured memory — <strong>files on your disk</strong>, not rows in
+      someone else's cloud. Close it tonight; tomorrow it still knows you.</p>
+      <div class="ctas">
+        <button class="btn btn-p" onclick="ctaFree()">Download free&nbsp;&nbsp;→</button>
+        <a class="btn btn-g" href="#pricing">See pricing</a>
+      </div>
+      <div class="price-hint">FREE $0 &nbsp;·&nbsp; PREMIUM <b>$20/mo</b> &nbsp;·&nbsp; CHARTER <b>$200 lifetime</b> — 100 slots only</div>
+      <form class="capture" id="capture" onsubmit="return submitWaitlist(event)">
+        <input type="email" id="email" placeholder="you@email.com" required aria-label="Email">
+        <button class="btn btn-p" type="submit">Notify me</button>
+      </form>
+      <div class="cap-msg" id="cap-msg" role="status"></div>
+    </div>
+    <div class="termwrap">
+      <div class="term hud" id="term" role="img" aria-label="Demo: Orion recalling a decision made three weeks earlier">
+        <div class="tbar">
+          <span class="d" style="background:#ff5f56"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span>
+          <span style="margin-left:6px">orion — one conversation, three weeks apart</span>
+        </div>
+        <div class="tbody" id="demo"></div>
+      </div>
+    </div>
+  </div>
+  <!-- fused subsystem ticker + stats band -->
+  <div class="band">
+    <div class="ticker" aria-hidden="true">
+      <div class="tk" id="tk">
+        <span>Identity Anchor</span><span>Attention Gate</span><span>Semantic Seeding</span><span>Contradiction Check</span>
+        <span>Memory Consolidation</span><span>Reflection Cycle</span><span>Recall Rerank</span><span>Gate Integrity</span>
+        <span>Vision Router</span><span>Watch Gate</span><span>Web Search Organ</span><span>Daily Diary</span>
+        <span>User Model</span><span>Self-Audit</span><span>Proactivity</span><span>Constitution</span>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b><em data-count="277">0</em></b><span>cognition layers, routed per query</span></div>
+      <div class="stat"><b data-count="5">0</b><span>memory sectors — episodic to reflective</span></div>
+      <div class="stat"><b><em data-count="0">0</em></b><span>cloud accounts required</span></div>
+      <div class="stat"><b>$0</b><span>markup on model calls — your keys, at cost</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- ═══ PROBLEM — typographic manifesto ═══ -->
+<section class="sect sect-problem">
+  <div class="wrap" style="position:relative">
+    <span class="eyebrow rv" style="justify-content:center"><span class="idx">01</span>Why Orion exists</span>
+    <h2 class="rv">Every AI you've used <span class="glitch" data-t="forgets you">forgets you</span>.</h2>
+    <div class="bigcount rv">DAY 1</div>
+    <div class="bigcount-cap rv">every session starts from zero — no matter how many months you've worked together</div>
+    <div class="receipts rv">
+      <div class="receipt"><b>DEC 05 · 2025</b><span>The best-known "AI memory" product is acquired by a tech giant.</span></div>
+      <div class="receipt"><b>DEC 19 · 2025</b><span>Two weeks later its app is sunset — users lose years of captured memory.</span></div>
+      <div class="receipt turn"><b>THE LESSON</b><span>A memory you don't hold is a loan. Orion's memory is files on <em>your</em> disk — nothing to sunset, nothing to lose.</span></div>
+    </div>
+    <div class="quote rv">
+      <p>"I got sick of re-explaining my own project to my own AI, session after session. So I
+      built an actual brain — not a chatbot with a memory feature bolted on."</p>
+      <div class="src">— the builder</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"><span>◇◇◇</span></div>
+
+<!-- ═══ FEATURES ═══ -->
+<section class="sect" id="features">
+  <div class="wrap" style="position:relative">
+    <div class="ghost" aria-hidden="true">02</div>
+    <span class="eyebrow rv"><span class="idx">02</span>Capabilities — in the build today</span>
+    <h2 class="rv">A thinking layer <span class="g">above any model.</span></h2>
+    <p class="sub rv">You bring the model. Orion supplies the memory, the reasoning pipeline, and
+    the senses. Everything below ships now — not a roadmap.</p>
+    <div class="bento">
+      <div class="b b3 lead rv"><span class="chip">CORE</span>
+        <div class="bi"><svg class="ic"><use href="#i-brain"/></svg></div>
+        <h3>Memory that persists — and reasons</h3>
+        <p>Conversations distill into structured, multi-sector memory with retrieve-then-rerank
+        recall. Ask <em>"what did I decide about X, and why?"</em> and Orion answers from your
+        history with the rationale intact.</p>
+        <div class="memline">✦ recalled · "particles over sculpted head — uncanny valley" · decision + rationale · Jun 30</div>
+      </div>
+      <div class="b b3 rv"><span class="chip">FREEDOM</span>
+        <div class="bi"><svg class="ic"><use href="#i-key"/></svg></div>
+        <h3>Any model. Your keys. Every tier.</h3>
+        <p>Bring your own API keys — including uncensored models. Keys encrypted locally, calls go
+        provider-direct with zero markup. Or run local models and never touch the cloud. Model
+        choice is never gated by pricing.</p>
+      </div>
+      <div class="b b2 rv"><span class="chip">SENSES</span>
+        <div class="eyeball" aria-hidden="true"><span class="white"><span class="pupil" id="pupil"></span></span></div>
+        <h3>Eyes, when you allow it</h3>
+        <p>Opt-in screen vision with a watch mode that wakes only on real change. Off by default,
+        visible indicator, instant off.</p>
+      </div>
+      <div class="b b2 rv"><span class="chip">RESEARCH</span>
+        <div class="bi"><svg class="ic"><use href="#i-globe"/></svg></div>
+        <h3>Deep research</h3>
+        <p>Live web search in chat, plus a deep-search mode that reaches the parts of the internet
+        normal assistants won't touch.</p>
+      </div>
+      <div class="b b2 rv"><span class="chip">PARALLEL</span>
+        <div class="bi"><svg class="ic"><use href="#i-split"/></svg></div>
+        <h3>Ask many models at once</h3>
+        <p>Put the same question to multiple substrates side by side and compare their answers in
+        one pane.</p>
+      </div>
+      <div class="b b3 rv"><span class="chip">TRUST</span>
+        <div class="bi"><svg class="ic"><use href="#i-scan"/></svg></div>
+        <h3>Glass-box reasoning</h3>
+        <p>The thinking trace is visible, and every reply carries a gate report — when an internal
+        check couldn't run, Orion says so instead of pretending. A broken checker never poses as a
+        passing one.</p>
+      </div>
+      <div class="b b3 rv"><span class="chip">REFLECTION</span>
+        <div class="bi"><svg class="ic"><use href="#i-book"/></svg></div>
+        <h3>A daily diary it writes itself</h3>
+        <p>Orion reflects on each day — what it learned about your work, what changed, what it got
+        wrong — into a diary you can read, and ratify or dispute.</p>
+      </div>
+      <div class="b b3 rv"><span class="chip">HANDS</span>
+        <div class="bi"><svg class="ic"><use href="#i-zap"/></svg></div>
+        <h3>It doesn't just talk. It does.</h3>
+        <p>An agentic substrate under the chat: Orion can run commands, edit files, and use its
+        tools to finish multi-step work — with an ask-before-acting mode you control. Watch the
+        step-by-step activity feed as it works.</p>
+      </div>
+      <div class="b b3 rv"><span class="chip">VOICE</span>
+        <div class="bi"><svg class="ic"><use href="#i-scan"/></svg></div>
+        <h3>Talk to it. It talks back.</h3>
+        <p>Speak instead of typing, teach it wake phrases, record voice memos it remembers, and
+        generate podcast-style audio overviews of your own material.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"><span>◇◇◇</span></div>
+
+<!-- ═══ INSIDE ORION — subsystems + the full 80-view surface, ONE section ═══ -->
+<section class="sect" id="inside">
+  <div class="wrap" style="position:relative">
+    <div class="ghost" aria-hidden="true">03</div>
+    <span class="eyebrow rv"><span class="idx">03</span>Inside Orion</span>
+    <h2 class="rv">This is not a thin app.</h2>
+    <p class="sub rv">A sample of what's running under the chat window — each one a real subsystem
+    in the current build.</p>
+    <div class="inside-grid rv">
+      <div class="ii"><b>Encrypted key vault</b><span>AES-256-GCM, PBKDF2 — keys never leave your machine or appear in responses</span></div>
+      <div class="ii"><b>Local API endpoint</b><span>OpenAI-compatible /v1 server — point other local tools at Orion itself</span></div>
+      <div class="ii"><b>MCP client</b><span>connect external tool servers and Orion can use their tools in chat</span></div>
+      <div class="ii"><b>14 conversation lenses</b><span>switch the reply posture — analyst, devil's advocate, mentor…</span></div>
+      <div class="ii"><b>Personas</b><span>define who Orion is for you — editable, persistent</span></div>
+      <div class="ii"><b>Disagreement inbox</b><span>Truth over Agreement: Orion files formal disagreements instead of caving</span></div>
+      <div class="ii"><b>Memory browser</b><span>a live table of every memory Orion holds — thousands of entries, inspectable</span></div>
+      <div class="ii"><b>Memory bootstrap</b><span>import history from legacy stores so day one isn't a blank slate</span></div>
+      <div class="ii"><b>Document ingestion</b><span>feed folders and files into recall (path-confined, local)</span></div>
+      <div class="ii"><b>Knowledge map</b><span>your projects, memories, and concepts as a navigable graph</span></div>
+      <div class="ii"><b>Dynamic layer routing</b><span>the 277 layers fire per-query by semantic relevance, never theatrically</span></div>
+      <div class="ii"><b>Reasoning forensics</b><span>replay how an answer formed, layer by layer, gate by gate</span></div>
+      <div class="ii"><b>Daily self-audit</b><span>Orion reviews its own day and writes it down — you can ratify or dispute</span></div>
+      <div class="ii"><b>A constitution</b><span>ten governing principles, visible in-app — Truth over Agreement is #1</span></div>
+      <div class="ii"><b>Proactive organs</b><span>morning briefing, watchers, and a user model that learns how you work</span></div>
+      <div class="ii"><b>Getting-to-know-you</b><span>a real onboarding interview that seeds the user model, not a form</span></div>
+    </div>
+    <div class="views-head rv"><b><em>80+</em> live views.</b><span>Not a chat box with settings — a whole surface area. The actual screens inside Orion today:</span></div>
+    <div class="vrow rv" aria-hidden="true"><div class="vtrack" id="vt1"></div></div>
+    <div class="vrow rev rv" aria-hidden="true"><div class="vtrack" id="vt2"></div></div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"><span>◇◇◇</span></div>
+
+<!-- ═══ ARCHITECTURE ═══ -->
+<section class="sect sect-arch" id="hood">
+  <div class="wrap" style="position:relative">
+    <div class="ghost" aria-hidden="true">277</div>
+    <span class="eyebrow rv"><span class="idx">04</span>Architecture</span>
+    <h2 class="rv">A cognitive OS, <span class="g">not a wrapper.</span></h2>
+    <div class="archwrap">
+      <div>
+        <p class="sub rv">Every reply runs a real pipeline — the chat window is just the surface.
+        277 independent cognitive processes, routed per query: deep questions get deep treatment,
+        quick ones stay quick.</p>
+        <div class="pipe rv" id="pipe">
+          <span class="stage">Identity</span><span class="arr">→</span>
+          <span class="stage">Attention</span><span class="arr">→</span>
+          <span class="stage">Semantic Seeding</span><span class="arr">→</span>
+          <span class="stage">Validation</span><span class="arr">→</span>
+          <span class="stage">Reflection</span><span class="arr">→</span>
+          <span class="stage">Execution</span>
+        </div>
+        <div class="hood-cols">
+          <div class="hc rv"><b><svg class="ic"><use href="#i-shield"/></svg>Honesty gates</b><p>Per-turn self-audit surfaced in the reply. Failed checks are reported, never hidden.</p></div>
+          <div class="hc rv"><b><svg class="ic"><use href="#i-disk"/></svg>Portable memory</b><p>Inspectable files under your user folder. Back it up, move it, read it yourself.</p></div>
+          <div class="hc rv"><b><svg class="ic"><use href="#i-lock"/></svg>Private by architecture</b><p>No account, no telemetry decisions made for you. What leaves is exactly what you send your provider.</p></div>
+          <div class="hc rv"><b><svg class="ic"><use href="#i-layers"/></svg>Model-free brain</b><p>The cognition is Orion's own — swap the model underneath any time; the memory and reasoning stay.</p></div>
+        </div>
+      </div>
+      <canvas id="ring" class="rv" aria-label="Visualization of Orion's 277 cognition layers arranged in orbital rings"></canvas>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"><span>◇◇◇</span></div>
+
+<!-- ═══ COMPARE ═══ -->
+<section class="sect" id="compare">
+  <div class="wrap" style="position:relative">
+    <div class="ghost" aria-hidden="true">05</div>
+    <span class="eyebrow rv"><span class="idx">05</span>The difference</span>
+    <h2 class="rv">Local-first is about who <span class="g">owns</span> your mind's extension.</h2>
+    <div class="twrap rv">
+      <table>
+        <thead><tr><th scope="col"></th><th scope="col">Cloud assistants</th><th scope="col">Orion</th></tr></thead>
+        <tbody>
+          <tr><td>Where memory lives</td><td class="no">Their servers</td><td class="yes">Your disk</td></tr>
+          <tr><td>Remembers between sessions</td><td class="no">Partial, provider-controlled</td><td class="yes">Yes — it's the whole point</td></tr>
+          <tr><td>Survives the company pivoting</td><td class="no">No — see Dec 2025</td><td class="yes">Yes — no backend to lose</td></tr>
+          <tr><td>Model choice</td><td class="no">Theirs only</td><td class="yes">Any provider or fully local, every tier</td></tr>
+          <tr><td>Screen vision</td><td class="no">Rare, cloud-processed</td><td class="yes">Opt-in, local-first, instant off</td></tr>
+          <tr><td>Shows its reasoning</td><td class="no">A summary, at best</td><td class="yes">Visible trace + per-turn gate report</td></tr>
+          <tr><td>Model-call economics</td><td class="no">Marked-up subscription</td><td class="yes">Provider-direct, $0 markup</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"><span>◇◇◇</span></div>
+
+<!-- ═══ PRICING ═══ -->
+<section class="sect sect-pricing" id="pricing">
+  <div class="wrap" style="position:relative">
+    <div class="ghost" aria-hidden="true">06</div>
+    <span class="eyebrow rv"><span class="idx">06</span>Pricing</span>
+    <h2 class="rv">Own it. <span class="g">Start free.</span></h2>
+    <p class="sub rv">Model calls always go to your provider at cost — Orion adds zero markup and
+    never gates which model you talk to. Pricing is pure software value.</p>
+    <div class="plans">
+      <div class="plan rv">
+        <h3>Free</h3>
+        <div class="pr">$0</div>
+        <div class="cy">no card required</div>
+        <ul>
+          <li><svg class="ic"><use href="#i-check"/></svg>Full conversation memory + daily diary</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Full model choice — any key, incl. uncensored</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Screen vision + watch mode</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Web + deep search</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>50 thinks per day</li>
+        </ul>
+        <button class="btn btn-g" onclick="ctaFree()">Download free</button>
+      </div>
+      <div class="plan hot rv">
+        <span class="badge">Most popular</span>
+        <h3>Premium</h3>
+        <div class="pr">$20<small>/mo</small></div>
+        <div class="cy">or $192/yr · 20% off</div>
+        <ul>
+          <li><svg class="ic"><use href="#i-check"/></svg>Everything in Free, uncapped</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Ask many models side-by-side</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Reasoning trace + gate reports</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Memory import from legacy stores</li>
+          <li class="soon"><svg class="ic"><use href="#i-check"/></svg>Plugin marketplace <i>IN DEVELOPMENT</i></li>
+          <li class="soon"><svg class="ic"><use href="#i-check"/></svg>Web clipper extension <i>IN DEVELOPMENT</i></li>
+          <li><svg class="ic"><use href="#i-check"/></svg>30-day money-back</li>
+        </ul>
+        <button class="btn btn-p" onclick="ctaPremium()">Buy Premium</button>
+      </div>
+      <div class="plan gold rv">
+        <span class="badge gb">Lifetime · never again</span>
+        <h3>Charter Member</h3>
+        <div class="pr">$200<small> once</small></div>
+        <div class="cy">no recurring billing, ever</div>
+        <div class="slotbar"><div class="sb-t"><span>LIMITED RELEASE</span><b>100 slots total</b></div><div class="sb"><i></i></div></div>
+        <div class="anchor-math">Premium runs <s>$240/yr</s> — Charter is $200 <b>once</b>. It pays
+        for itself inside 10 months, then never bills again.</div>
+        <ul>
+          <li><svg class="ic"><use href="#i-check"/></svg>Everything in Premium — forever</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Early access to experimental features</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Rate locked for life</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Lifetime 30-day refund eligibility</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Charter role in the Discord</li>
+        </ul>
+        <button class="btn btn-gold" onclick="ctaCharter()">Claim a Charter slot</button>
+      </div>
+    </div>
+    <div class="trust rv">
+      <span><svg class="ic"><use href="#i-card"/></svg>30-day money-back on every paid tier</span>
+      <span><svg class="ic"><use href="#i-lock"/></svg>Your data never touches our servers — we don't have servers</span>
+      <span><svg class="ic"><use href="#i-key"/></svg>BYOK — you pay your model provider directly, at cost</span>
+    </div>
+    <p class="plans-foot rv"><span class="soonkey">IN DEVELOPMENT</span> = building now, landing in
+    updates — listed so you know exactly what you're buying into, not to pad the column. Buying
+    today gets every update as it ships.</p>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"><span>◇◇◇</span></div>
+
+<!-- ═══ FAQ ═══ -->
+<section class="sect" id="faq">
+  <div class="wrap" style="position:relative">
+    <div class="ghost" aria-hidden="true">07</div>
+    <span class="eyebrow rv"><span class="idx">07</span>FAQ</span>
+    <h2 class="rv">Fair questions.</h2>
+    <div class="faqs rv">
+      <details><summary>Does it work offline?</summary>
+        <p>Yes — point Orion at local models and everything runs on your machine. With cloud keys,
+        only the model calls leave your computer; memory and files never do.</p></details>
+      <details><summary>Do I need my own AI provider account?</summary>
+        <p>For cloud-grade answers, yes — paste in a key (you pay your provider directly, at cost).
+        Prefer zero cloud? Run local models. Model choice is never tier-gated.</p></details>
+      <details><summary>Is Orion a Rewind or Limitless alternative?</summary>
+        <p>Orion isn't a screen recorder — it's a persistent-memory AI assistant. But if what drew
+        you to those products was the local-first promise, Orion actually keeps it: memory lives as
+        files on your own disk, and there's no vendor backend to be acquired or sunset.</p></details>
+      <details><summary>What does "screen vision" actually see?</summary>
+        <p>Nothing, until you switch it on. Off by default, visible indicator while watching, one
+        click off. Privacy is enforced in the architecture, not a settings promise.</p></details>
+      <details><summary>What am I actually paying for if models are BYOK?</summary>
+        <p>The cognitive OS itself: the memory system, the 277-layer pipeline, the senses, the
+        honesty machinery, and every update as it ships. Your model spend stays between you and
+        your provider — Orion takes nothing off the top.</p></details>
+      <details><summary>Refunds?</summary>
+        <p>30-day money-back on every paid tier, no questions. Charter Members keep refund
+        eligibility for life.</p></details>
+      <details><summary>What platforms?</summary>
+        <p>Windows today. Memory is plain files, so your data stays portable regardless of what
+        ships next.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FINAL ═══ -->
+<div class="final">
+  <div class="glow"></div>
+  <h2 class="rv">Stop re-introducing yourself<br>to <span class="g">your own AI.</span></h2>
+  <p class="sub rv" style="margin:14px auto 0">Free tier, no card. One session is all it takes.</p>
+  <div class="ctas rv" style="justify-content:center;margin-top:30px">
+    <button class="btn btn-p" onclick="ctaFree()">Download free&nbsp;&nbsp;→</button>
+    <a class="btn btn-g" href="#pricing">Buy Orion</a>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="f-in">
+    <span class="logo" style="font-size:14px"><svg viewBox="0 0 32 32" width="17" height="17"><path d="M26.88 10.93A12 12 0 0 1 10.93 26.88" fill="none" stroke="#00c8e0" stroke-opacity=".45" stroke-width="2.2" stroke-linecap="round"/><path d="M5.12 21.07A12 12 0 0 1 21.07 5.12" fill="none" stroke="#00c8e0" stroke-opacity=".45" stroke-width="2.2" stroke-linecap="round"/><line x1="9.28" y1="22.72" x2="22.72" y2="9.28" stroke="#00c8e0" stroke-width="1.7"/><circle cx="9.28" cy="22.72" r="2.3" fill="#00c8e0"/><circle cx="22.72" cy="9.28" r="2.3" fill="#00c8e0"/><circle cx="16" cy="16" r="3.1" fill="#4feaff"/><circle cx="16" cy="16" r="1.2" fill="#eafcff"/></svg>ORION · a private cognitive OS · © 2026</span>
+    <div class="f-links">
+      <a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a>
+      <a href="#" onclick="return discordSoon()">Discord</a>
+    </div>
+    <span>Your memory is files on your disk. We couldn't read it if we wanted to.</span>
+  </div>
+  <p class="f-seo">Orion is a local-first, private AI assistant and cognitive OS for Windows with
+  persistent AI memory: a thinking layer that runs above any model you choose — bring your own
+  API keys or run fully offline with local models. Unlike cloud assistants, Orion's memory is
+  stored as plain files on your own disk, so it survives company pivots, acquisitions, and
+  price changes. If you're searching for an AI that remembers you, a Rewind or Limitless
+  alternative that can't be sunset, or a BYOK personal AI with screen vision and deep research —
+  that's Orion.</p>
+</footer>
+
+<script>
+/* ── CONFIG — TODO: set store links. Until a real WAITLIST_ENDPOINT exists the buttons
+   send people to the GitHub repo (honest: we don't pretend to store emails we can't). ── */
+const DOWNLOAD_URL="", PREMIUM_URL="", CHARTER_URL="", DISCORD_INVITE="", WAITLIST_ENDPOINT="",
+      FOLLOW_URL="https://github.com/unholywar23/orion-cognitive-os";
+
+function go(u){ if(u){location.href=u;return true} return false }
+function fallback(what){
+  if(!WAITLIST_ENDPOINT){
+    msg(what+" isn't live quite yet — star or watch the GitHub repo; the launch lands there first.");
+    document.getElementById('cap-msg').innerHTML += ' <a href="'+FOLLOW_URL+'" target="_blank" rel="noopener" style="color:var(--cyan-hot);text-decoration:underline">Open the repo →</a>';
+    document.getElementById('top').scrollIntoView({behavior:'smooth'});
+    return;
+  }
+  document.getElementById('capture').classList.add('open');
+  msg(what+" checkout opens shortly — leave your email and it comes straight to you.");
+  document.getElementById('top').scrollIntoView({behavior:'smooth'});
+  setTimeout(()=>document.getElementById('email').focus(),450);
+}
+function ctaFree(){ if(!go(DOWNLOAD_URL)) fallback("The download") }
+function ctaPremium(){ if(!go(PREMIUM_URL)) fallback("Premium") }
+function ctaCharter(){ if(!go(CHARTER_URL)) fallback("Charter") }
+function msg(t){ document.getElementById('cap-msg').textContent=t }
+function discordSoon(){ if(DISCORD_INVITE){window.open(DISCORD_INVITE,'_blank');return false} fallback("The community"); return false }
+async function submitWaitlist(e){
+  e.preventDefault();
+  const email=document.getElementById('email').value.trim();
+  if(!email) return false;
+  if(!WAITLIST_ENDPOINT){ msg("Almost live — check back very soon."); return false }
+  try{
+    const r=await fetch(WAITLIST_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email})});
+    msg(r.ok?"You're in. Watch your inbox.":"That didn't go through — try again?");
+  }catch(_){ msg("That didn't go through — try again?") }
+  return false;
+}
+
+addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('scr',scrollY>10),{passive:true});
+/* hero word rotator — typed out, alive */
+(function(){
+  const el=document.getElementById('rotator');
+  const words=['remembers.','learns you.','works for you.','is yours.','remembers.'];
+  let wi=0;
+  function typeWord(w,done){let i=0;(function t(){el.textContent=w.slice(0,++i)+(i<w.length?'▌':'');if(i<w.length)setTimeout(t,55);else done&&done()})()}
+  function eraseWord(done){let w=el.textContent;(function e(){w=w.slice(0,-1);el.textContent=w+'▌';if(w.length)setTimeout(e,26);else done&&done()})()}
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+    setInterval(()=>{eraseWord(()=>{wi=(wi+1)%words.length;typeWord(words[wi])})},5200);
+  }
+})();
+document.querySelectorAll('svg.ic').forEach(s=>s.setAttribute('viewBox','0 0 24 24'));
+(function(){const tk=document.getElementById('tk');tk.innerHTML+=tk.innerHTML;})();
+document.querySelectorAll('.b').forEach(c=>c.addEventListener('mousemove',e=>{
+  const r=c.getBoundingClientRect();
+  c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px');
+}));
+
+/* ── 80+ views marquee chips (merged section) ── */
+(function(){
+  const views=[
+    'Memory browser','Knowledge graph','Constellation map','Mind view','Timeline scrub','Temporal replay','Embeddings','Archive','Memory bootstrap',
+    'Calendar','Meetings','Transcripts','Reminders','Schedules','Habits','Tasks','Workflows','Automations','Drafts','Bookmarks','Clipboard','Deal watcher','Signals',
+    'Voice lab','Voice donor','Voice tuning','Voice memos','Wake phrases','Audio overviews','Audio capture','Screen capture','Presence',
+    'Self diary','Diary insights','Constitution','Disagreement inbox','Justification','Co-evolution','Homeostasis','Worldview','Biographical memory','Get-to-know-you','Personas',
+    'Secrets vault','Encryption','Audit log','Forensics','Diagnostics','Retention','Hibernation','Quotas','License','Legal',
+    'Sandbox','Self-programming','Skills browser','Connectors','Integrations','Substrates','Execution contracts','Feature catalog','Trust network','Local /v1 API'
+  ];
+  const half=Math.ceil(views.length/2);
+  const mk=v=>'<span class="vchip">'+v+'</span>';
+  const r1=views.slice(0,half).map(mk).join(''), r2=views.slice(half).map(mk).join('');
+  document.getElementById('vt1').innerHTML=r1+r1;   /* duplicated for seamless loop */
+  document.getElementById('vt2').innerHTML=r2+r2;
+})();
+
+/* ── PAGE-WIDE LIVING MESH — one fixed canvas, one RAF: stars + synaptic nodes/links,
+   cursor-reactive on the WHOLE page, pulses travel the links. ~30fps cap. Pauses on
+   hidden tab. Canvas sized once + on resize ONLY (per-frame resize froze the ring
+   renderer — root-caused 2026-07-02). ── */
+(function(){
+  const cv=document.getElementById('mesh'); if(!cv)return;
+  const ctx=cv.getContext('2d');
+  const red=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let W,H,DPR=Math.min(devicePixelRatio||1,1.5);
+  function size(){W=cv.width=innerWidth*DPR;H=cv.height=innerHeight*DPR}
+  addEventListener('resize',size);size();
+  /* stars (cheap backdrop) */
+  const stars=Array.from({length:140},()=>({x:Math.random(),y:Math.random(),z:.3+Math.random()*.7,r:Math.random()*1.1+.3,tw:Math.random()*6.28}));
+  /* mesh nodes */
+  const N=Math.max(60,Math.min(120,Math.round(innerWidth/13)));
+  const LINK=150*DPR, MOUSE_R=200*DPR;
+  const nodes=Array.from({length:N},()=>({
+    x:Math.random(),y:Math.random(),
+    vx:(Math.random()-.5)*.00022,vy:(Math.random()-.5)*.00022,
+    r:.7+Math.random()*1.5,tw:Math.random()*6.28
+  }));
+  let mx=-1e5,my=-1e5,scr=0;
+  addEventListener('mousemove',e=>{mx=e.clientX*DPR;my=e.clientY*DPR});
+  document.addEventListener('mouseleave',()=>{mx=-1e5;my=-1e5});
+  addEventListener('scroll',()=>{scr=scrollY},{passive:true});
+  const pulses=[];
+  setInterval(()=>{ if(!red&&!document.hidden){ pulses.push({n:nodes[(Math.random()*N)|0],t:0,life:1.6+Math.random()}); if(pulses.length>6)pulses.shift(); } },1700);
+  let last=0,acc=0;
+  function frame(t){
+    requestAnimationFrame(frame);
+    if(document.hidden)return;
+    const dt=Math.min(50,t-last); last=t;
+    acc+=dt; if(acc<30)return; acc=0;          /* ~30fps cap */
+    ctx.clearRect(0,0,W,H);
+    /* ambient nebulas (scroll parallax) */
+    const neb=(x,y,r,c)=>{const g=ctx.createRadialGradient(x,y,0,x,y,r);g.addColorStop(0,c);g.addColorStop(1,'rgba(0,0,0,0)');ctx.fillStyle=g;ctx.fillRect(x-r,y-r,r*2,r*2)};
+    neb(W*.12,H*.2-scr*.03*DPR,W*.42,'rgba(0,95,125,.12)');
+    neb(W*.9,H*.6-scr*.015*DPR,W*.5,'rgba(0,200,224,.055)');
+    neb(W*.5,H*1.02-scr*.02*DPR,W*.55,'rgba(106,92,255,.06)');
+    /* stars */
+    for(const s of stars){
+      const y=(s.y*H - scr*.05*DPR*s.z)%H, yy=y<0?y+H:y;
+      ctx.beginPath();ctx.arc(s.x*W,yy,s.r*s.z*DPR,0,7);
+      ctx.fillStyle='rgba(155,208,224,'+(.09+Math.abs(Math.sin(t/1500+s.tw))*.26*s.z).toFixed(3)+')';ctx.fill();
+    }
+    /* nodes: drift + cursor repulsion */
+    for(const n of nodes){
+      if(!red){n.x+=n.vx*30;n.y+=n.vy*30;}
+      if(n.x<0)n.x=1; if(n.x>1)n.x=0; if(n.y<0)n.y=1; if(n.y>1)n.y=0;
+      const px=n.x*W,py=n.y*H;
+      const dx=px-mx,dy=py-my,d2=dx*dx+dy*dy;
+      if(d2<MOUSE_R*MOUSE_R&&d2>1){
+        const d=Math.sqrt(d2),f=(1-d/MOUSE_R)*.014;
+        n.x+=dx/d*f*8*DPR/W*8; n.y+=dy/d*f*8*DPR/H*8;
+      }
+    }
+    /* links */
+    ctx.lineWidth=1;
+    for(let i=0;i<N;i++){
+      const a=nodes[i],ax=a.x*W,ay=a.y*H;
+      for(let j=i+1;j<N;j++){
+        const b=nodes[j],bx=b.x*W,by=b.y*H;
+        const dx=ax-bx,dy=ay-by,d2=dx*dx+dy*dy;
+        if(d2<LINK*LINK){
+          const k=1-Math.sqrt(d2)/LINK;
+          const mxk=Math.max(0,1-Math.hypot((ax+bx)/2-mx,(ay+by)/2-my)/MOUSE_R);
+          ctx.strokeStyle='rgba(0,200,224,'+(k*.12+mxk*.3).toFixed(3)+')';
+          ctx.beginPath();ctx.moveTo(ax,ay);ctx.lineTo(bx,by);ctx.stroke();
+        }
+      }
+    }
+    /* nodes draw */
+    for(const n of nodes){
+      const x=n.x*W,y=n.y*H;
+      const tw=.45+Math.abs(Math.sin(t/1400+n.tw))*.55;
+      const mk=Math.max(0,1-Math.hypot(x-mx,y-my)/MOUSE_R);
+      const rr=n.r*DPR*(1+mk*.9);
+      if(mk>.05||n.r>1.6){
+        const g=ctx.createRadialGradient(x,y,0,x,y,rr*5);
+        g.addColorStop(0,'rgba(79,234,255,'+(.18*tw+mk*.5).toFixed(3)+')');g.addColorStop(1,'rgba(79,234,255,0)');
+        ctx.fillStyle=g;ctx.beginPath();ctx.arc(x,y,rr*5,0,7);ctx.fill();
+      }
+      ctx.fillStyle='rgba(170,230,245,'+(.22+.5*tw+mk*.25).toFixed(3)+')';
+      ctx.beginPath();ctx.arc(x,y,rr,0,7);ctx.fill();
+    }
+    /* traveling pulses */
+    for(const p of pulses){
+      p.t+=.03;
+      if(p.t>p.life)continue;
+      if(!p.to||p.prog>=1){
+        let best=null,bd=1e18;
+        const px=p.n.x*W,py=p.n.y*H;
+        for(const c of nodes){
+          if(c===p.n||c===p.from)continue;
+          const dx=c.x*W-px,dy=c.y*H-py,d2=dx*dx+dy*dy;
+          if(d2<LINK*LINK&&d2<bd){bd=d2;best=c}
+        }
+        if(!best)continue;
+        p.from=p.n;p.to=best;p.prog=0;
+      }
+      p.prog+=.075;
+      const k=Math.min(1,p.prog);
+      const x=(p.n.x+(p.to.x-p.n.x)*k)*W, y=(p.n.y+(p.to.y-p.n.y)*k)*H;
+      if(k>=1){p.n=p.to;p.to=null}
+      const fade=1-p.t/p.life;
+      const g=ctx.createRadialGradient(x,y,0,x,y,9*DPR);
+      g.addColorStop(0,'rgba(190,248,255,'+(.85*fade).toFixed(3)+')');
+      g.addColorStop(.4,'rgba(79,234,255,'+(.4*fade).toFixed(3)+')');
+      g.addColorStop(1,'rgba(79,234,255,0)');
+      ctx.fillStyle=g;ctx.beginPath();ctx.arc(x,y,9*DPR,0,7);ctx.fill();
+    }
+  }
+  requestAnimationFrame(frame);
+})();
+
+/* ── memory demo (loops) + terminal tilt ── */
+(function(){
+  const el=document.getElementById('demo');
+  const script=[
+    {who:'you',text:"Wiring the face to the backend — remember we picked particles over the 3-D head? Uncanny valley was the whole reason."},
+    {who:'orion',text:"Noted. Particle face over the sculpted head — the realistic one read as uncanny. I'll hold the why with the decision.",mem:'✦ memory written · decision + rationale'},
+    {gap:'· · ·  three weeks later  · · ·'},
+    {who:'you',text:"Why did we go with particles for the face again?"},
+    {who:'orion',text:"You chose particles on June 30 to escape the uncanny valley on the realistic head — and the look matched the rest of the interface. Want the full trace?",mem:'✦ recalled · 2 entries · with rationale'},
+  ];
+  /* plays ONCE when it scrolls into view, auto-scrolls so nothing is cut off,
+     then holds the final frame — no looping (2026-07-03). */
+  let played=false;
+  function render(){
+    if(played)return; played=true;
+    el.innerHTML='';
+    const nodes=script.map(s=>{
+      if(s.gap){const d=document.createElement('div');d.className='tgap';d.textContent=s.gap;return d}
+      const d=document.createElement('div');d.className='msg '+s.who;
+      d.innerHTML='<div class="who">'+(s.who==='you'?'You':'Orion')+'</div><p>'+s.text+'</p>'+(s.mem?'<span class="mem">'+s.mem+'</span>':'');
+      return d;
+    });
+    nodes.forEach(n=>el.appendChild(n));
+    nodes.forEach((n,i)=>setTimeout(()=>{
+      n.classList.add('show');
+      el.scrollTo({top:el.scrollHeight,behavior:'smooth'});
+    },600+i*1600));
+  }
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches){
+    played=false; render(); el.querySelectorAll('.msg,.tgap').forEach(n=>n.classList.add('show'));
+  }else{
+    new IntersectionObserver((es,io)=>es.forEach(e=>{if(e.isIntersecting){io.unobserve(el);render()}}),{threshold:.3}).observe(el);
+  }
+  const term=document.getElementById('term'),wrap=term.parentElement;
+  wrap.addEventListener('mousemove',e=>{
+    const r=wrap.getBoundingClientRect();
+    const rx=((e.clientY-r.top)/r.height-.5)*-5, ry=((e.clientX-r.left)/r.width-.5)*7;
+    term.style.transform='rotateX('+rx+'deg) rotateY('+ry+'deg)';
+  });
+  wrap.addEventListener('mouseleave',()=>{term.style.transform='rotateX(0) rotateY(0)'});
+})();
+
+/* ── eye follows cursor ── */
+(function(){
+  const p=document.getElementById('pupil'); if(!p)return;
+  addEventListener('mousemove',e=>{
+    const r=p.parentElement.getBoundingClientRect();
+    const dx=e.clientX-(r.left+r.width/2), dy=e.clientY-(r.top+r.height/2);
+    const a=Math.atan2(dy,dx), d=Math.min(5,Math.hypot(dx,dy)/40);
+    p.style.transform='translate(calc(-50% + '+(Math.cos(a)*d)+'px), calc(-50% + '+(Math.sin(a)*d)+'px))';
+  });
+})();
+
+/* ── count-up (hero stats + the ×50) ── */
+(function(){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{
+    if(!e.isIntersecting)return; io.unobserve(e.target);
+    const el=e.target, target=+el.dataset.count, t0=performance.now();
+    (function tick(now){
+      const k=Math.min(1,(now-t0)/1100), v=Math.round(target*(1-Math.pow(1-k,3)));
+      el.textContent=v; if(k<1)requestAnimationFrame(tick);
+    })(t0);
+  }),{threshold:.5});
+  document.querySelectorAll('[data-count]').forEach(n=>io.observe(n));
+})();
+
+/* ── reveal + pipeline + 277-layer ring ── */
+(function(){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+  document.querySelectorAll('.rv').forEach(n=>io.observe(n));
+  const pipe=document.getElementById('pipe'),st=[...pipe.querySelectorAll('.stage')];let timer=null;
+  new IntersectionObserver(es=>es.forEach(e=>{
+    if(e.isIntersecting&&!timer){let i=0;timer=setInterval(()=>{st.forEach(s=>s.classList.remove('lit'));st[i%st.length].classList.add('lit');i++},700)}
+  }),{threshold:.4}).observe(pipe);
+
+  /* orbital ring: 277 ticks in 4 orbits, a pulse travels and lights them.
+     NOTE: canvas is sized ONCE + on window resize only — resizing per-frame
+     forces layout every frame and froze the renderer (root-caused 2026-07-02). */
+  const cv=document.getElementById('ring'),ctx=cv.getContext('2d');
+  const DPR=Math.min(devicePixelRatio||1,2);
+  function rsize(){const s=cv.offsetWidth||360;cv.width=s*DPR;cv.height=s*DPR}
+  addEventListener('resize',rsize);rsize();
+  let ringVisible=false;
+  new IntersectionObserver(es=>es.forEach(e=>{ringVisible=e.isIntersecting}),{threshold:.05}).observe(cv);
+  const orbits=[{n:34,r:.30},{n:55,r:.48},{n:83,r:.66},{n:105,r:.84}];
+  function rframe(t){
+    requestAnimationFrame(rframe);
+    if(!ringVisible||document.hidden)return;
+    if(cv.width<10)rsize();
+    const W=cv.width,C=W/2;ctx.clearRect(0,0,W,W);
+    const cg=ctx.createRadialGradient(C,C,0,C,C,W*.13);
+    cg.addColorStop(0,'rgba(79,234,255,.9)');cg.addColorStop(.4,'rgba(0,200,224,.25)');cg.addColorStop(1,'rgba(0,200,224,0)');
+    ctx.fillStyle=cg;ctx.beginPath();ctx.arc(C,C,W*.13,0,7);ctx.fill();
+    ctx.fillStyle='rgba(230,250,255,.95)';ctx.beginPath();ctx.arc(C,C,3.5*DPR,0,7);ctx.fill();
+    ctx.font=(10*DPR)+'px JetBrains Mono';ctx.fillStyle='rgba(160,220,235,.8)';ctx.textAlign='center';
+    ctx.fillText('277 LAYERS',C,C+W*.02+14*DPR);
+    orbits.forEach((o,oi)=>{
+      const R=o.r*W*.5;
+      ctx.strokeStyle='rgba(0,200,224,.10)';ctx.lineWidth=1*DPR;
+      ctx.beginPath();ctx.arc(C,C,R,0,7);ctx.stroke();
+      const sweep=(t/3000+oi*.25)%1;
+      for(let i=0;i<o.n;i++){
+        const a=(i/o.n)*Math.PI*2+oi;
+        const x=C+Math.cos(a)*R,y=C+Math.sin(a)*R;
+        const d=Math.abs(((a/(Math.PI*2))%1)-sweep);const dd=Math.min(d,1-d);
+        const lit=Math.max(0,1-dd*9);
+        ctx.fillStyle='rgba('+(lit>0? '79,234,255':'90,140,160')+','+(0.18+lit*.8).toFixed(3)+')';
+        ctx.beginPath();ctx.arc(x,y,(1+lit*1.6)*DPR,0,7);ctx.fill();
+      }
+    });
+  }
+  requestAnimationFrame(rframe);
+})();
+</script>
+</body>
+</html>
